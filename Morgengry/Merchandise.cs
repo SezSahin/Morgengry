@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Merchandise
+    public abstract class Merchandise
     {
-        string ItemId;
+        public string ItemId;
         public Merchandise(string itemId)
         {
             ItemId = itemId;
+        }
+        public override string ToString()
+        {
+            return "ItemId: " + ItemId.ToString();
         }
     }
 }

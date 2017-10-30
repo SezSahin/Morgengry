@@ -8,11 +8,12 @@ namespace Morgengry
 {
     public class Book : Merchandise
     {
-        string ItemId;
-        string Title;
-        double Price;
+        public string Title;
+        public double Price;
 
-        public Book(string itemId, string title, double price)
+
+        public Book(string itemId, string title, double price) :
+            base(itemId)
         {
             Title = title;
             Price = price;
