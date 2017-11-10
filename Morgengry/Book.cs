@@ -11,12 +11,11 @@ namespace Morgengry
         public string Title;
         public double Price;
 
-
-        public Book(string itemId, string title, double price) :
-            base(itemId)
+        public Book(string itemId, string title, double price) : base(itemId)
         {
             Title = title;
             Price = price;
+            ItemId = itemId;
         }
         public Book(string itemId, string title) :
             this(itemId, title, 0)
@@ -30,6 +29,11 @@ namespace Morgengry
         public override string ToString()
         {
             return "ItemId: " + ItemId.ToString() + ", Title: " + Title.ToString() + ", Price: " + Price.ToString();
+        }
+
+        public override double GetValue()
+        {
+            return Price; //Skal implementeres til at regne prisen ud for hver bog
         }
     }
 }

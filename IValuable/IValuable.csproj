@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4DF37513-D452-4486-AD88-7850EE996769}</ProjectGuid>
+    <ProjectGuid>{681D23EB-2354-48A8-B5BA-395C4E5F3DD0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Morgengry</RootNamespace>
-    <AssemblyName>Morgengry</AssemblyName>
+    <RootNamespace>IValuable</RootNamespace>
+    <AssemblyName>IValuable</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,15 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Amulet.cs" />
-    <Compile Include="Book.cs" />
-    <Compile Include="IPersistable.cs" />
-    <Compile Include="IValuable.cs" />
-    <Compile Include="Merchandise.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Course.cs" />
-    <Compile Include="ValuableRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
 namespace Morgengry
 {
-    class Program
+    interface IPersistable
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        void Save();
+        void Save(string filename);
+        void Load();
+        void Load(string filename);
     }
+
 }

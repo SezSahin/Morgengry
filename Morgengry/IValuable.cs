@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
 namespace Morgengry
 {
-    class Program
+    public interface IValuable
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        string ItemId { get; set; }
+        double GetValue();
     }
 }
